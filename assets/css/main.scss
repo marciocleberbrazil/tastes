@@ -6,7 +6,7 @@ body{
 .colours {
     padding: 25px;
     margin-top: 30px;
-    background-color: #333333;
+    background-color: #0E1414;
     .header {
         width: 264px;
         margin: 0 auto;
@@ -22,18 +22,82 @@ body{
             padding-bottom: 25px;
         }
     }
-    .item {
-        text-align: center;
-        img {
-            width: 355px;
-        }
-        h2 {
-            font-size: 1.5em;
-            font-weight: 700;
-        }
-        a {
-            color: #fff;
-            font-size: 1.4em;
+    .items {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .item {
+            padding: 5px;
+            text-align: center;
+            width: 365px;
+            img {
+                max-width: 100%;
+            }
+            h2 {
+                font-size: 1.3em;
+                font-weight: 700;
+            }
+            a.title {
+                color: #fff;
+                font-size: 1.2em;
+                line-height: 1.8em;
+                width: 70%;
+                display: block;
+                margin: 0 auto;
+            }
         }
     }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .colours {
+        .items {
+            .item {
+                width: 300px;
+            }
+        }
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .colours {
+        .items {
+            .item {
+                width: 300px;
+            }
+        }
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .colours {
+        .items {
+            .item {
+                width: 230px;
+                a.title {
+                    width: 100%;
+                    font-size: 1.0em;
+                }
+            }
+        }
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    .colours {
+        .items {
+            .item {
+                width: 365px;
+            }
+        }
+    }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
 }
