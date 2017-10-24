@@ -1,9 +1,10 @@
 # tastes
 Taste: A five-sense experiance
 
-# RUNNING THIS CODE #
-
+# INSTALLING DEPENDENCIES #
 > npm install
+
+# RUNNING THIS CODE #
 > npm start
 
 # GULP AND BROWSER SYNC#
